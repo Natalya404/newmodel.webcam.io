@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylecss/popup.css">
+    <link rel="stylesheet" href="./stylecss/style.css">
+    <link rel="stylesheet" href="./stylecss/slider.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  
+    <title>Результаты анкеты</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Результаты анкеты</h1>
+        <p><strong>Фамилия:</strong> <span id="surname"></span></p>
+        <p><strong>Имя:</strong> <span id="name"></span></p>
+        <p><strong>Отчество:</strong> <span id="patronymic"></span></p>
+        <p><strong>Дата рождения:</strong> <span id="dob"></span></p>
+        <p><strong>Ваши сильные стороны:</strong> <span id="strengths"></span></p>
+        <p><strong>Ваши слабые стороны:</strong> <span id="weaknesses"></span></p>
+        <p><strong>Почему хотите зарабатывать именно так:</strong> <span id="motivation"></span></p>
+        <p><strong>Где вы нас нашли:</strong> <span id="source"></span></p>
+        <p><strong>Как долго планируете работать в данной индустрии:</strong> <span id="duration"></span></p>
+        <p><strong>Чем занимаетесь в жизни:</strong> <span id="hobby"></span></p>
+        <p><strong>Сколько хотели бы зарабатывать в месяц:</strong> <span id="salary"></span></p>
+        <p><strong>Образование:</strong> <span id="education"></span></p>
+        <p><strong>Есть ли дети:</strong> <span id="children"></span></p>
+        <p><strong>Есть ли опыт в данной сфере:</strong> <span id="opit"></span></p>
+        <p><strong>Укажите Ваш город проживания:</strong> <span id="sity"></span></p>
+     
+    </div>
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            document.getElementById('surname').textContent = urlParams.get('surname');
+            document.getElementById('name').textContent = urlParams.get('name');
+            document.getElementById('patronymic').textContent = urlParams.get('patronymic');
+            document.getElementById('dob').textContent = urlParams.get('dob');
+            document.getElementById('strengths').textContent = urlParams.get('strengths');
+            document.getElementById('weaknesses').textContent = urlParams.get('weaknesses');
+            document.getElementById('motivation').textContent = urlParams.get('motivation');
+            document.getElementById('source').textContent = urlParams.get('source');
+            document.getElementById('duration').textContent = urlParams.get('duration');
+            document.getElementById('hobby').textContent = urlParams.get('hobby');
+            document.getElementById('salary').textContent = urlParams.get('salary');
+            document.getElementById('education').textContent = urlParams.get('education');
+            document.getElementById('children').textContent = urlParams.get('children');
+            document.getElementById('opit').textContent = urlParams.get('opit');
+            document.getElementById('sity').textContent = urlParams.get('sity');
+            
+
+         
+
+        </script>
+
+
+<div class="container">
+        <h4>Просим отправить скриншот Вашего результата в наш telegram: @SiaCute</h4>
+</div>
+    </div>
+</body>
+</html>

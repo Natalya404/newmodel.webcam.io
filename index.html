@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylecss/popup.css">
+    <link rel="stylesheet" href="./stylecss/style.css">
+    <link rel="stylesheet" href="./stylecss/slider.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  
+    <title>Ver1eX</title>
+</head>
+<body>
+
+    <!-- Основной блок слайдера -->
+
+
+
+     <header class="headercont">
+            <div class="content" >
+                <div class="logo">
+                 <img src="./img/shoes.png" height="80px" width="90px">
+                </div>
+                
+        <h2>Ver1eX</h2>
+                <div class="navig">
+                    <ul>
+                        <li class="btn"><a href="#glav"><button type="button" class="btn btn-outline-light">Главная</button></a></a></li>
+                        <li class="btn"><a href="#catalog"><button type="button" class="btn btn-outline-light">О нас</button></a></a></li>
+                        <li class="btn"><a href="#tovarskidka"><button type="button" class="btn btn-outline-light">Анкета</button></a></a></li>
+                    </ul>
+                </div>
+               
+            </div>
+        </header>
+
+
+        <div class="slider" id="glav">
+
+            <!-- Первый слайд -->
+            <div class="item">
+              <img src="./img/img1.jpg">
+            </div>
+          
+            <!-- Второй слайд -->
+            <div class="item">
+                <img src="./img/img2.jpg">
+            </div>
+          
+            <!-- Третий слайд -->
+            <div class="item">
+                <img src="./img/img3.jpg">
+            </div>
+          
+            <!-- Кнопки-стрелочки -->
+            <a class="previous" onclick="previousSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+          </div>
+        
+
+
+
+
+
+
+          <div class="container" id="catalog">
+
+           <p><h4> Vertex — в переводе с английского языка на русский означает «вершина». Мы — единственная webcam студия в г. 
+            Северске, предоставляющая возможность моделям заработать. Мы предлагаем профессионально развиваться в индустрии,
+             благодаря уникальной системе продвижения и обучения, работая только на высокий результат.
+            Если ты хочешь новенький айфон,
+             поскорее погасить кредиты или просто хорошо и стабильно зарабатывать, то тебе точно к нам! 
+            Мы подберем индивидуальный график и самые комфортные условия для работы. Если ты хочешь развиваться в данной сфере, то заполняй анкету! 
+            У нас нет никаких штрафов и наказаний, и все проходит строго конфиденциально.  Всему научим и все покажем. Мы работаем с городами: Томск, Северск, Новосибирск.
+            Если ты просто хочешь попробовать поработать моделью, приходи к нам — наши ворота открыты для всех! Мы рады видеть как мужчин, так и женщин, и все вопросы решаемы. Собеседования проводятся в формате онлайн-конференций или лично. Ждем тебя!</h4> </p>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="container" id="tovarskidka">
+            <h1>Анкета</h1>
+            <form action="result.html" method="GET">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" required>
+    
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="patronymic">Отчество:</label>
+                <input type="text" id="patronymic" name="patronymic" required>
+    
+                <label for="dob">Дата рождения:</label>
+                <input type="date" id="dob" name="dob" required>
+    
+                <label for="strengths">Ваши сильные стороны:</label>
+                <textarea id="strengths" name="strengths" required></textarea>
+    
+                <label for="weaknesses">Ваши слабые стороны:</label>
+                <textarea id="weaknesses" name="weaknesses" required></textarea>
+    
+                <label for="motivation">Почему хотите зарабатывать именно так:</label>
+                <textarea id="motivation" name="motivation" required></textarea>
+    
+                <label for="opt">Где вы нас нашли:</label>
+                <input type="text" id="source" name="source" required>
+    
+                <label for="duration">Как долго планируете работать в данной индустрии:</label>
+                <input type="text" id="duration" name="duration" required>
+    
+                <label for="hobby">Чем занимаетесь в жизни:</label>
+                <input type="text" id="hobby" name="hobby" required>
+    
+                <label for="salary">Сколько хотели бы зарабатывать в месяц:</label>
+                <input type="number" id="salary" name="salary" required>
+    
+                <label for="education">Образование:</label>
+                <select id="education" name="education" required>
+                    <option value="9 классов">9 классов</option>
+                    <option value="11 классов">11 классов</option>
+                    <option value="СПО">Среднее профессиональное</option>
+                    <option value="Высшее">Высшее</option>
+                    <option value="Незаконченное">Незаконченное</option>
+                    <option value="Доучиваюсь">Доучиваюсь</option>
+                </select>
+    
+                <label for="children">Есть ли дети:</label>
+                <select id="children" name="children" required>
+                    <option value="Да">Да</option>
+                    <option value="Нет">Нет</option>
+                </select>
+     
+                <label for="opit">Есть ли опыт в данной сфере:</label>
+                <select id="opit" name="opit" required>
+                    <option value="Да">Да</option>
+                    <option value="Нет">Нет</option>
+                </select>
+
+                    <label for="sity">Укажите Ваш город:</label>
+                    <select id="sity" name="sity" required>
+                        <option value="Новосибирск">Новосибирск</option>
+                        <option value="Северск">Северск</option>
+                        <option value="Томск">Томск</option>
+                </select><br><br>
+    
+                <button type="submit"> <a href="result.html"></a>Отправить</button>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+<section>
+    <footer class="footcont">
+        <div class="foot">
+            <div>
+            </div>
+        </div>
+    </footer>
+</section>
+<script src="./js/app.js"></script>
+</html>
